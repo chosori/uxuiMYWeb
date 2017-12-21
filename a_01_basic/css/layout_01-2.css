@@ -1,0 +1,96 @@
+/* layout_01.css */
+@charset "utf-8";
+/* reset */
+html,body{margin: 0; padding: 0; color: #333;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div{margin: 0; padding: 0;}
+ul,ol,li,dl,dt,dd{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #f2a;}
+a:hover{text-decoration:underline; font-weight:bold;}
+img{border:0;}
+
+header,section,footer,aside,article,nav,main,figure{display: block;}
+
+/*
+header :웹페이지의 상단에 위치 전체의 내용을 총괄하는 영역
+section :본문내용을 뜻하며, 작은 웹페이지의 영역
+         (내부에는 다시 header,footer,section,article...)
+footer: 웹페이지의 가장 하단에 위치(꼭 그렇지는 않다),웹페이지의 정보(회사         정보)를 담는곳
+aside: 있으면 좋고, 없어도 크게 불편하지 않는 영역
+article: 본문의 내용을 뜻하며, section과 유사하지만 좀더 깊은 의미를 지          닌 내용을 담을떄
+nav: navigation 의 약자로 주로 메뉴영역을 사용할때 쓰는 영역
+main: 전체를 뜻하는 의미의 코드, 현재는 아직 많이 사용하지 않는다.(특수한       경우)
+figure: img코드를 감쌀때 쓰는 영역, figcaption(이미지 설명) 코드와 
+        함께 사용
+template: html문서를 분리해서 사용할때 쓰는 코드
+          (기본문서에는 사용하지 않음)
+*/
+
+/* common */
+/*.clearfix:after{content:" "; display:block; clear: both;}*/
+/*  익스플로러가 하위일떄 구버전으로 쓴다.*/
+
+/*.clearfix:after, 구버전 신버전 둘다 먹힘   */
+
+.clearfix::after{content:" "; display:block; clear: both;}
+/* :hover, :visited, :active */
+
+.hidden{width: 0; height: 0; overflow: hidden;}
+/*  overflow: hidden  정해진 영역에서 넘치는 영역을 숨겨주는 태그.
+    설명을 들어야 하는 내용에 display:none;이라고 하는 경우 안읽어 주는 것이므로 절대쓰면 안된다. 제목에 대해서 박스를 명확하게 분류한다. */
+
+/* design */
+/*==== design =======================================*/
+body{background-color: #035;}
+#box{width: 600px; height: auto; margin: 50px auto; margin: 3.125rem auto;}
+/* 50px 나누기 16px= 3.125rem (1rem= 16px) */
+
+
+/* #headBox ----------------*/
+#headBox{width: 100%; height: 100px; background-color: #1af;
+  padding: 10px; box-sizing: border-box;}
+h1{width: 80px; height: 80px; background-color: #fff; float: left; /*margin-top: 10px; margin-left: 10px*/;}
+#globalNavArea{width: 300px; height: 40px; background-color: #dfdfdf; float: right; margin-top: 40px; /*margin-top: 50px; margin-right: 10px;*/}
+#globalNavArea>ul{width: 100%; height: 100%;}
+#globalNavArea>ul>li{width: 10%; height: 100%; background-color: #555; color: #fff; float: left; margin-right: 8%;}
+#globalNavArea>ul>li.last{margin-right: 0;}
+
+
+
+/*
+* h1: h1은 사이트에서 제목을 뜻하는 의미를 가지고 있고, 가장 중요하다는 의미를       지니고 있다.
+* html5 초기버전에서는 h1을 여러번 사용이 가능(sectoin 태그내의 새로운 작은         웹형식을 갖추면)
+* html5.1 버전인 현재(2017.10)는 h1을 다시 한번만 사용하기로 변형.
+*/
+
+
+
+/* #contentBox --------------------*/
+#contentBox{width: 100%; height: auto;}
+#contentArea{width:70%;
+  /*width: calc(100% / 3);*/ height:150px; float:left; background-color:#aac;}
+#viewArea{width: 70%; 
+  /*width: calc(100% / 3);*/ height: 150PX; float: left; background-color: #faf;}
+/* width:33.333333%; 소수점 6자리까지 써도된다. */
+/*  width: calc(100% / 3); 띄어쓰기 잘해야된다. IE 하위 버전에서는 
+호환이 잘 안될겨우가 있어 주의!!*/
+#sideArea{width:30%; 
+  /*width: calc(100% / 3);*/ height:300px; float:right; background-color:#fa0; margin-top: -150px;}
+
+ 
+
+/* #footBox -------------------*/
+#footBox{width:100% ; height: 100px; background-color:#af1 ;}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,3 +6,5 @@
 # node_modules 폴더
 **/node_modules
 **/.DS_Store
+
+**/node_modules

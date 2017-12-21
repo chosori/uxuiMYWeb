@@ -1,0 +1,52 @@
+/* position_01.css*/
+@charset"utf-8";
+
+/* reset.css*/
+
+html,body{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,
+p,div,pre,ul,ol,li,dl,dt,dd,
+table,thead,tbody,tfoot,tr,td,th,
+form,fieldset,label,legend,input,textarea,select,button,img{margin: 0; padding: 0; border: 0; outline: 0;}
+
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration:underline;}
+  
+a:focus{outline: 3px solid #fa0; outline-offset:5px;}
+/* 포커스: 브라우저에서 키보드에 탭(tab)을 눌렀을때 내 위치 표시 및 이동되는것  offset은 공중에 띄었을떄*/
+  
+/* design.css*/
+body{height: 200rem;}
+
+h1{padding: 1rem; background-color: #0af; color: #fff; text-align: center; text-transform: uppercase; font-family: 'myriad pro',nanumGothic,dotum,sans-serif; box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.3); margin-bottom: 2.5rem;}
+/* text-transform: uppercase; 대문자*/
+
+#wrap{width:1200px ; height: auto; background-color: #ccc; margin: 0 auto; border: 3px solid #333;  position:relative}
+#wrap>div{width: 200px; height: 200px; float: left; border: 2px solid #07f; text-align: center; line-height: 200px; font-weight: bold; font-style: 2rem; box-sizing: border-box;}
+#wrap>div:hover{background-color: #f06; transition: all 0.8s; color: #fff;}
+
+#wrap:after{content: " "; display: block; clear: both;}
+
+  .not{width: ; height: ; background-color: #fa0;}
+  .static{background-color: #af8; position: static; top: 0; left: 0; z-index: -9999;}/* static은 보잘것없다.(아무 영향이 없다.) relative를 완전히 날려버릴 수 있다.*/
+  .fixed{background-color: #9ac; position: fixed; 
+    top:0; left: 0; z-index: 100;}
+/* fixed를 쓰는 순간 앞에있던 순서 위로 온다.(쇼핑몰에서 최근에 본 상품 처럼 스크롤을 해도 따라오는것) 그 아래 있던것은 바로 그  아래존재 기본적으로 z-index(0)이지만 마이너스를 주는 순간 부터는 클릭/마우스오버 불가. (위에 막이 생기는것 같음) z-index는 평균적으로 100단위 또는 1000단위로 쓴다.*/
+
+/*z-index는 100단위 1000단위로 써야 나중에 수정할때 편하다.*/
+  .absolute{background-color: #cca;  position: absolute; top:0; left: 150px; z-index: 101px;}
+  .relative{background-color: #ac1; position:relative; top:100px; left: -50px; z-index: 300;}
+  /* relative 기본인 자신의 위치이동한다. 자기 자신의 자리의 흔적을 남겨 다른게 들어오지 못한다. 오로지 시각적인 기능에서만 사용가능하며 margin-left를 주는 경우  */
+  /* z-index 앞뒤로 움직인다. */
+  /* absolute 부모에따라 결과 가 달라진다. */
+
+
+/* position
+* position: static | fixed | absolute | relative;
+*static을 제외한 나머지는: top, left, right, bottom, z-index
+*z-index는 1의 숫자로 판단할 수도 있지만, 100단위로 처리하는 경우가 많다.
+*z-index는 단위가 존재하지 않는다. 마이너스값도 사용할수있다.
+*/
+
+

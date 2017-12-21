@@ -1,0 +1,62 @@
+@charset "utf-8";
+html,body{margin:0; padding: 0; color: #000;}
+h1,h2,h3,h4,h5,h6
+p,pre,div{margin: 0; padding: 0;}
+ul,ol,il,dl,dd,dt{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #9ef;}
+a:hover{text-decoration: underline; font-weight: bold;}
+img{border: 0;}
+
+header,section,footer,aside,article,nav,main,figure{display: block;}
+
+.clearfix::after{content: " "; display:block; clear: both;}
+.hidden{width: 0; height: 0; overflow: hidden;}
+
+#wrap{width: 960px; height: auto; margin: auto;}
+
+/* #headBox ------------------*/
+#headBox{width:100%; height: 180px; background-color:#fee; padding: 40px 30px; box-sizing: border-box;}
+h1{width: 200px; height: 100px; background-color: #fff;
+float: left;}
+#rka{width:500px; height: auto; float: right; }
+#unb{width:200px; height: 30px; margin-top:0; background-color: #fff; float:right;}
+#gnb{width: 500px; height: 50px; margin-top:10px;  background-color: #fee; float: right;}
+#gnb>ul{width: 100%; height: 30px; }
+#gnb>ul>li{width: 80px; height: 30px; float: left;
+background-color: #fff; margin-right: 20px;}
+#gnb>ul>li.last{margin-right: 0;}
+
+/* #bannerBox ----------------*/
+#bannerBox{width: 100%; height: 310px; background-color: #fe8;}
+
+/* #sideBoox --------------*/
+
+#sideBox{width:100%; height: 580px; background-color: #eee; padding: 20px 30px; box-sizing: border-box;}
+#sideBox ul{width: 100%; height: auto;}
+#news{width: auto;height: 260px;margin-bottom: 10px;background-color: #eee;}
+#newsArea{width: 150px; height: auto; background-color: #fff; margin-bottom: 10px;}
+ul>li{width:215px; height: 215px; background-color: #eff; float:left;  margin-right: 10px;}
+ul>li.last{margin-right: 0;}
+#issue{width: auto;height: 250px;margin-top: 10px;}
+#issueArea{width: 150px; height: auto; background-color: #fff; margin-bottom: 10px;}
+
+/* #contentBox ---------------*/
+#contentBox{width: 100%; height:auto; background: #eee; padding: 20px 30px; box-sizing: border-box;}
+#photoArea{width: 150px; height: 50px; background-color: #fff; margin-bottom: 10px;}
+#photo{width:45%; height:auto; background-color:#eee; margin-right: 10px; float: left;}
+#photo>ul{width: 400px; height: auto; margin-right: 30px;}
+#photo>ul>li{width: 400px; height:200px; background-color: #f99; margin-bottom: 10px;}
+#photo>ul>li.last{margin-bottom: 0;}
+#photoType{width: 50%; height: auto; float: right;}
+#photoStlye{width: 440px; height: 300px; background-color: #f99; margin-bottom: 10px;}
+#photoType>ul{width: 100%; height:auto;}
+#photoType>ul>li{width: 100px; height: 100px; float: left;}
+
+/* #footBox -----------------*/
+#footBox{width: 100%; height: 210px; background-color: #889; padding: 10px 30px; box-sizing: border-box;}
+#foot{width: 620px; height: auto; float: left;}
+.big >.footlogo{width: 200px; height: 100px; background-color: #fff; float: left;}
+.big >.footnumber{width: 400px; height: 60px; background-color: #fff; margin-left: 10px; float: left;}
+.big >.footaddress{width: 400px; height: 90px; background-color: #fff; margin-top: 10px; margin-left: 10px; float: left;}
+.footname{width: 250px; height: 60px;background-color: #fff; float: right;}
+

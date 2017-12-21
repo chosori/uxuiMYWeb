@@ -1,0 +1,74 @@
+@charset "utf-8";
+html,body{margin:0; padding: 0; color: #000;}
+h1,h2,h3,h4,h5,h6
+p,pre,div{margin: 0; padding: 0;}
+ul,ol,il,dl,dd,dt{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #9ef;}
+a:hover{text-decoration: underline; font-weight: bold;}
+img{border: 0;}
+
+header,section,footer,aside,article,nav,main,figure{display: block;}
+
+.clearfix::after{content: " "; display:block; clear: both;}
+.hidden{width: 0; height: 0; overflow: hidden;}
+
+#wrap{width: 978px; height: auto; margin: auto; min-height: 1740px;}
+
+
+
+/* #headBox ---------------------- */
+#headBox{width: 978px; height: 150px; background-color: #eef; padding: 10px 20px; box-sizing: border-box;}
+h1{width: 125px; height: 125px; background-color: #fff; float: left;}
+#gnb{width: 650px; height: 60px; background-color: #99f;
+float: left; margin-left:10px; margin-top: 50px; padding: 15px;  box-sizing: border-box;}
+#gnb>ul{width: 100%; height: 100%;}
+#gnb>ul>li{width: 80px; height: 30px; background-color: #fff; float: left; margin-right: 100px;}
+#gnb>ul>li.last{margin-right: 0;}
+
+#unb{width: 110px; height: 40px; /*margin-top: 15px;*/ margin-right: 15px; float: right; /*padding: 15px;*/}
+#unb>ul{width: 100%; height: 100%;}
+#unb>ul>li{width: 40px; height: 40px; margin-top: 15px; margin-right: 15px;  background-color: #e99; float: left;}
+
+/* #bannerBox -----------------*/
+#bannerBox{width: 100%; height: 200px; background-color: #eee; margin-top: 20px;}
+#bannerMenu{width: 800px; height: 150px;/* background-color: #fff;*/ padding-left: 60px; margin-top: 25px; margin-left: 60px;}
+#bannerMenu>ul{width: 100%; height: 100%;}
+#bannerMenu>ul>li{width: 150px; height:150px; background-color: #fff; margin-bottom: 20px; margin-right:10px; float: left;}
+/*#bannerMenu>ul>li.last{margin-right: 0;}*/
+
+/* #sideBox ---------------*/
+#sideBox{width: 100%; height: 300px; background-color: #779;margin-top: 20px;}
+#sideA{width: 175px; height: 300PX; background-color: #987; float: left;}
+
+#sideA>.sideGroup{width: 100px; height: 100px; background-color: #fec; margin-top: 40px; margin-left: 40px;float: left;}
+
+#sideB{width: 803px; height: 300px;/* background-color: #fff;*/ float: right;}
+#sideB>ul{width: 803px; height: 300px;}
+#sideB>ul>li{width: 140px; height: 140px; background-color: #fff;float: left; margin-top: 7px; margin-left: 70px;}
+#sideB>ul>li.last{margin-right: 0;}
+
+
+/* #contentBox ---------------*/
+#contentBox{width: 100%; height: 140px; background-color: #c96; margin-top: 20px;}
+
+/* #photoBox ------------------*/
+#photoBox{width: 978px; height: 700px; background-color: #ccc; margin-top: 20px; padding: 10px; /*box-sizing: border-box;*/}
+
+.photoMenu{width: 100px; height: 45px; background-color: #ee9; float: left;}
+.photoDate{width: 250px; height: 30px; background-color: #ee9; margin-top: 10px; margin-left: 20px; float: left;}
+#photoSide{width: 140px; height: 40px; float:right;}
+#photoSide>ul{width: 160px; height: 40px;}
+#photoSide>ul>li{width: 60px; height: 30px; background-color: #ee9; margin-top: 10px; margin-right: 20px; float: left;}
+
+#photo{width: 700px; height: auto; margin-top:70px; margin-left:50px; float:left;}
+#photo>ul{width: 100%; height: auto;}
+#photo>ul>li{width:150px; height: 150px; background-color:#fff; float:left; margin-left: 20px; margin-top: 10px;}
+
+#photonumber{width:280px; height:40px; background-color: #fff; float:left; margin-top: 30px; margin-left: 100px;}
+#photonumber>ul{}
+
+/* #footBox ----------------*/
+#footBox{width: 100%; height: 150px; background-color: #999; margin-top: 20px;}
+
+
+

@@ -1,0 +1,25 @@
+/* position_test_01.css*/
+@charset "utf-8";
+
+/*reset.css*/
+
+html,body{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,
+p,div,pre,ul,ol,li,dl,dt,dd,
+table,thead,tbody,tfoot,tr,td,th,
+form,fieldset,label,legend,input,textarea,select,button,img{margin: 0; padding: 0; border: 0; outline: 0;}
+
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration:underline;}
+
+a:focus{outline: 3px solid #fa0; outline-offset:5px;}
+
+
+/* disign.css*/
+body{height: 200rem;}
+
+h1{padding: 1rem; background-color:#9cf; color:#fff; text-align: center; text-transform: uppercase; font-family: 'myriad pro',nanumGothic,dotum,sans-serif; box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.3); margin-bottom: 2.5rem;}
+
+#wrap{width:1200px; height:auto; background-color:#eec; margin:0 auto; border: 3px solid #99d;}
+#wrap>div{width: 200px; height: 200px; float:left; border: 2px solid #0f9; text-align:center;}
